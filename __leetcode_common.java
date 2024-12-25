@@ -67,4 +67,33 @@ class LeetCodeUtils {
         }
         return null;
     }
+
+    public static ListNode listToListNode(List<Integer> nums) {
+        ListNode head = null;
+        ListNode p = null;
+        for (Integer num : nums) {
+            ListNode node = new ListNode(num);
+            if (head == null) {
+                head = node;
+                p = head;
+            } else {
+                p.next = node;
+                p = p.next;
+            }
+        }
+        return head;
+    }
+
+    public static void printListNode(ListNode head) {
+        ListNode current = head;
+        while (current != null) {
+            System.out.print(current.val);
+            if (current.next != null) {
+                System.out.print(" ► ");
+            }
+            current = current.next;
+        }
+        System.out.print(" ► NULL\n");
+
+    }
 }
