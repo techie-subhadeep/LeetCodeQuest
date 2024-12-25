@@ -1,0 +1,10 @@
+{
+    "files.eol": "\n",
+    "editor.formatOnSave": true,
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.debug.settings.exceptionBreakpoint.skipClasses": [
+        "*.java"
+    ],
+    "leetcode.defaultLanguage": "java",
+    "leetcode.showDescription": "Both"
+}
